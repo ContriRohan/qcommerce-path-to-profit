@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+.env
+.DS_Store
+.idea/
+.vscode/
+
+# Raw datasets are large and downloaded/fetched locally, not committed. The small
+# derived artifacts that the twin actually reads (data/geo/*_density.csv,
+# data/order_timing.csv) ARE committed so the pipeline and CI run with no network.
+data/raw/*
+!data/raw/README.md
+data/geo/raw/
